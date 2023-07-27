@@ -1,12 +1,15 @@
-import PomodoroTimer from "./components/pomodoro-timer"
-
+import PomodoroTimer from './components/Pomodoro-timer';
 function App() {
-
-  return (
-    <>
-      <PomodoroTimer defaultPomodoroTime={1500}/>
-    </>
-  )
+	return (
+		<div className="container">
+			<PomodoroTimer
+				pomodoroTime={5}
+				shortRestTime={5}
+				longRestTime={5}
+				cycles={4}
+			/>
+		</div>
+	);
 }
 
-export default App
+export default App;
